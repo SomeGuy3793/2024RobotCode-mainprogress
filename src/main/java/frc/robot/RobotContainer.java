@@ -7,7 +7,8 @@ package frc.robot;
 
 //subsystem imports
 import frc.robot.subsystems.ShooterSubsystem;
-import frc.robot.subsystems.ClimberSubsystem;
+import frc.robot.subsystems.RightClimberSubsystem;
+import frc.robot.subsystems.LeftClimberSubsystem;
 import frc.robot.subsystems.DriveSubsystem;
 import frc.robot.subsystems.IntakeSubsystem;
 //import frc.robot.subsystems.ArmSubsystem;
@@ -72,7 +73,9 @@ public class RobotContainer{
   public final static DriveSubsystem m_robotDrive = new DriveSubsystem();
   private final ShooterSubsystem m_shooter = new ShooterSubsystem();
   private final IntakeSubsystem m_intake = new IntakeSubsystem();
-  private final ClimberSubsystem m_climber = new ClimberSubsystem();
+  private final RightClimberSubsystem m_rightClimber = new RightClimberSubsystem();
+  private final LeftClimberSubsystem m_leftClimber = new LeftClimberSubsystem();
+
   private final ArmSubsystem m_arm = new ArmSubsystem();
 
   static CommandXboxController m_driverController = new CommandXboxController(OIConstants.kDriverControllerPort);
@@ -209,10 +212,10 @@ public class RobotContainer{
      * Right Trigger: climb down (right)
      * Left Trigger: climb down (left)
      */
-         m_driverController.rightBumper().whileTrue(m_climber.climbDownRight());
-         m_driverController.leftBumper().whileTrue(m_climber.climbDownLeft());
-         m_driverController.rightTrigger().whileTrue(m_climber.climbUpRight());
-         m_driverController.leftTrigger().whileTrue(m_climber.climbUpLeft());
+         m_driverController.rightBumper().whileTrue(m_rightClimber.climbDownRight());
+         m_driverController.leftBumper().whileTrue(m_leftClimber.climbDownLeft());
+         m_driverController.rightTrigger().whileTrue(m_rightClimber.climbUpRight());
+         m_driverController.leftTrigger().whileTrue(m_leftClimber.climbUpLeft());
 
          m_operatorController.leftTrigger().whileTrue(m_arm.armSpeakerAngle());
         
