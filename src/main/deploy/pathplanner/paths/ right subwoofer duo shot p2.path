@@ -1,0 +1,73 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 2.2,
+        "y": 6.96
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.414649145087764,
+        "y": 6.834195598215758
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 0.74,
+        "y": 6.76
+      },
+      "prevControl": {
+        "x": 1.4237174088383266,
+        "y": 6.834195598215758
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "shoot marker",
+      "waypointRelativePos": 0.0,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": []
+        }
+      }
+    },
+    {
+      "name": "maybe intake",
+      "waypointRelativePos": 1.0,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": []
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 62.40270413135625,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "duo shot right subwoofer to center",
+  "previewStartingState": {
+    "rotation": -177.64670313389172,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

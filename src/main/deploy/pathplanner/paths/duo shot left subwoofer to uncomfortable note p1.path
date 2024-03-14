@@ -1,0 +1,52 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 0.72,
+        "y": 4.34
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.8408575413642057,
+        "y": 4.231603901804295
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 2.2398611463889595,
+        "y": 4.168126055550356
+      },
+      "prevControl": {
+        "x": 0.952167693809072,
+        "y": 4.331354803060483
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -179.99999999999986,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "duo shot left subwoofer to uncomfortable note",
+  "previewStartingState": {
+    "rotation": -60.101098161385394,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

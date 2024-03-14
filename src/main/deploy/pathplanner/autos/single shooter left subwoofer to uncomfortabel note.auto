@@ -1,0 +1,25 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.7163928362944445,
+      "y": 4.340423066811046
+    },
+    "rotation": -59.65675111576039
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Copy of left subwoofer to uncomfortable note"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "single shots",
+  "choreoAuto": false
+}

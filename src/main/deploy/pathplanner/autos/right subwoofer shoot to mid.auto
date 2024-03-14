@@ -1,0 +1,61 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.7365015087811937,
+      "y": 6.755413868609491
+    },
+    "rotation": 60.52411099675429
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "Shooter On"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Stop Shooter"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "move from right subwoofer center"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Intake On"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 2.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Stop Intake"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "single shots",
+  "choreoAuto": false
+}

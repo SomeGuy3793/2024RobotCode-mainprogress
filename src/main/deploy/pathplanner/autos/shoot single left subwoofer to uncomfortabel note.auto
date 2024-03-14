@@ -1,0 +1,37 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.7365015087811937,
+      "y": 6.755413868609491
+    },
+    "rotation": 61.15845474514979
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "right subwoofer duo shot p1"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": " right subwoofer duo shot p2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "move from right subwoofer center"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "duo shots",
+  "choreoAuto": false
+}
