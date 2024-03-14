@@ -7,8 +7,8 @@ package frc.robot;
 
 //subsystem imports
 import frc.robot.subsystems.ShooterSubsystem;
-import frc.robot.subsystems.RightClimberSubsystem;
 import frc.robot.subsystems.LeftClimberSubsystem;
+import frc.robot.subsystems.RightClimberSubsystem;
 import frc.robot.subsystems.DriveSubsystem;
 import frc.robot.subsystems.IntakeSubsystem;
 //import frc.robot.subsystems.ArmSubsystem;
@@ -16,8 +16,7 @@ import frc.robot.subsystems.ArmSubsystem;
 import frc.robot.Constants.IntakeShooter; 
 import frc.robot.Constants.ArmConstants;
 import frc.robot.Constants.operatorStuff;
-import frc.robot.commands.DetectNoteHigh;
-import frc.robot.commands.DetectNoteLow;
+import frc.robot.commands.DetectNoteSensor;
 //import frc.robot.commands.DetectNote;
 //import frc.robot.Constants.ClimberConstants;
 //import frc.robot.commands.DetectNote;
@@ -73,8 +72,8 @@ public class RobotContainer{
   public final static DriveSubsystem m_robotDrive = new DriveSubsystem();
   private final ShooterSubsystem m_shooter = new ShooterSubsystem();
   private final IntakeSubsystem m_intake = new IntakeSubsystem();
-  private final RightClimberSubsystem m_rightClimber = new RightClimberSubsystem();
   private final LeftClimberSubsystem m_leftClimber = new LeftClimberSubsystem();
+  private final RightClimberSubsystem m_rightClimber = new RightClimberSubsystem();
 
   private final ArmSubsystem m_arm = new ArmSubsystem();
 
@@ -218,7 +217,11 @@ public class RobotContainer{
          m_driverController.leftTrigger().whileTrue(m_leftClimber.climbUpLeft());
 
          m_operatorController.leftTrigger().whileTrue(m_arm.armSpeakerAngle());
-        
+
+
+        //  // just some test code 
+        //  m_driverController.x()
+        // .whileTrue(new DetectNoteLow(m_intake, 0.2));
   }
 
   /**
@@ -282,9 +285,7 @@ public class RobotContainer{
     NamedCommands.registerCommand("Intake On", new SetIntakeSpeed(m_intake, Constants.IntakeShooter.kIntakeSpeed));
     NamedCommands.registerCommand("Stop Intake", new SetIntakeSpeed(m_intake, 0));
     NamedCommands.registerCommand("Arm Speaker", new SetArmAngle(m_arm, Constants.desiredEncoderValue.kSpeakerArmAngle));
-    NamedCommands.registerCommand("Arm Intake", new SetArmAngle(m_arm, Constants.desiredEncoderValue.kIntakeArmAngle));
-    NamedCommands.registerCommand("Sensor Detect Stop", new DetectNoteHigh(m_intake));
-    NamedCommands.registerCommand("Sensor Detect Stop", new DetectNoteLow(m_intake));
-
+    // NamedCommands.registerCommand("Arm Intake", new SetArmAngle(m_arm, Constants.desiredEncoderValue.kIntakeArmAngle));
+    //NamedCommands.registerCommand("Sensor Detect Stop", new DetectNote(m_intake));
   }
 }

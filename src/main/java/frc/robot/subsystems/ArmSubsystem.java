@@ -33,10 +33,9 @@ public class ArmSubsystem extends SubsystemBase{
 
 // autonomous attempt 
 public void setShooterAngle(double targetAngle){
-  if(armAbsoluteEncoder.getPosition() < targetAngle){
+  while(armAbsoluteEncoder.getPosition() < targetAngle){
     setArm(-(Constants.operatorStuff.kArmSpeedTest));
   }
-  else setArm(0);
 }
 
 //should self explanatory

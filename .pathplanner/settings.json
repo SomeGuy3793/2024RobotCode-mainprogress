@@ -3,6 +3,8 @@
   "robotLength": 0.9,
   "holonomicMode": true,
   "pathFolders": [
+    "duo shot mid subwoofer under stage to note",
+    "Test Stuff",
     "duo shot left subwoofer to uncomfortable note",
     "duo shot right subwoofer to center",
     "single note paths"

@@ -8,20 +8,20 @@
       },
       "prevControl": null,
       "nextControl": {
-        "x": 1.8408575413642057,
-        "y": 4.231603901804295
+        "x": 1.8232420006879377,
+        "y": 4.111991050457951
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-        "x": 2.2398611463889595,
-        "y": 4.168126055550356
+        "x": 2.16,
+        "y": 4.14
       },
       "prevControl": {
-        "x": 0.952167693809072,
-        "y": 4.331354803060483
+        "x": 0.9127296966579629,
+        "y": 4.273533556011657
       },
       "nextControl": null,
       "isLocked": false,
@@ -45,7 +45,7 @@
   "reversed": false,
   "folder": "duo shot left subwoofer to uncomfortable note",
   "previewStartingState": {
-    "rotation": -60.101098161385394,
+    "rotation": 120.40517572051806,
     "velocity": 0
   },
   "useDefaultConstraints": true

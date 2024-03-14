@@ -36,7 +36,7 @@ public final class Constants {
     }
 
     public static final class desiredEncoderValue {
-    public static final double kSpeakerArmAngle=4.14;
+    public static final double kSpeakerArmAngle=3.14;
     public static final double kAmpArmAngle=0;
     public static final double kIntakeArmAngle=3.9;
 

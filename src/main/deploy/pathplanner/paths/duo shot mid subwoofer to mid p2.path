@@ -3,25 +3,25 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 2.161012694118422,
-        "y": 4.141362415097835
+        "x": 2.19,
+        "y": 5.591843464388683
       },
       "prevControl": null,
       "nextControl": {
-        "x": 1.4074732602195417,
-        "y": 4.141362415097835
+        "x": 2.6887545062809424,
+        "y": 5.582775200638121
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-        "x": 0.72,
-        "y": 4.34
+        "x": 1.4,
+        "y": 5.59
       },
       "prevControl": {
-        "x": 1.5053317825933898,
-        "y": 4.213467374303169
+        "x": 1.1052671238675813,
+        "y": 5.582775200638121
       },
       "nextControl": null,
       "isLocked": false,
@@ -38,14 +38,14 @@
     "maxAngularAcceleration": 720.0
   },
   "goalEndState": {
-    "velocity": 0.0,
-    "rotation": 119.92997882911415,
-    "rotateFast": true
+    "velocity": 0,
+    "rotation": 180.0,
+    "rotateFast": false
   },
   "reversed": false,
-  "folder": "duo shot left subwoofer to uncomfortable note",
+  "folder": "duo shot mid subwoofer under stage to note",
   "previewStartingState": {
-    "rotation": -178.9190758133394,
+    "rotation": 180.0,
     "velocity": 0
   },
   "useDefaultConstraints": true

@@ -3,25 +3,25 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 0.7365015087811937,
-        "y": 6.755413868609491
+        "x": 0.74,
+        "y": 6.81
       },
       "prevControl": null,
       "nextControl": {
-        "x": 1.9315401788698316,
-        "y": 6.933946499471947
+        "x": 1.3421129752456284,
+        "y": 6.942171140907576
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-        "x": 2.203588091386709,
-        "y": 6.961151290723635
+        "x": 2.146327011795348,
+        "y": 7.0050704681015805
       },
       "prevControl": {
-        "x": 0.861485056303446,
-        "y": 6.779786015712382
+        "x": 1.3386144840268221,
+        "y": 6.887585009517068
       },
       "nextControl": null,
       "isLocked": false,
@@ -60,13 +60,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -176.30861401354872,
-    "rotateFast": false
+    "rotation": 180.0,
+    "rotateFast": true
   },
   "reversed": false,
   "folder": "duo shot right subwoofer to center",
   "previewStartingState": {
-    "rotation": 59.42077312751099,
+    "rotation": -119.98163936884937,
     "velocity": 0
   },
   "useDefaultConstraints": true
